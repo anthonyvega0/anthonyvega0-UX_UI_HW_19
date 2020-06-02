@@ -1,0 +1,325 @@
+body {
+    background-color: #D3D3D3;
+
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    width: 95%;
+}
+.ul-header {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 25px;
+    list-style: none;
+}
+
+.logo{
+ width: 150px;
+margin-left: 42px;
+}
+
+
+
+
+    
+    
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    outline: solid red 1px;
+    width: 90% ;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+
+.my-face{
+    width: 50%;
+    height: 40%;
+    padding-top: 65px;
+    
+  
+}
+.about-text{
+    width: 90%
+    
+}
+.resume-button{
+    width: 100px;
+    height: 75px;  
+    margin-right: 25px; 
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    
+}
+.content-info{
+    display: flex;
+   align-content: center;
+    flex-direction: column;
+   margin-left: 50px;
+   
+}
+.content-info h1 {
+    font-size: 65px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.content-info p {
+    font-size: 30px;
+    margin-top: -45px;
+    color: black;
+  
+    
+}
+footer{
+    background-color: #373738;
+    padding: 25px;
+    margin-bottom: -10px;
+    outline: red 1px solid;
+    width: 100%;
+} 
+.ul-footer{
+    list-style: none;
+    color: white;
+    font-size: 25px;
+}
+
+.background-top img {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    left:0px;
+    height:750px;
+    z-index: -10;
+}
+.background-mid img {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    top: 800px;
+    right: -10px;
+    height: 2250px;
+}   
+.background-bot img {
+    position: absolute;
+    top: 3050px;
+    width: 100%;
+    left: 0px;
+    height: 1000px;
+    z-index: -10;
+}
+
+/* ------------------------------HW 18 Starts HERE------------------------------------*/
+.case-studies {
+    outline: black 1px solid;
+    width: 90%;
+    margin: 0 auto;
+}
+.cs-title {
+    text-align: center;
+    margin-top: 270px;
+    font-size: 45px;
+}
+.csimg {
+    width: 90%;
+}
+.cs1-info {
+    grid-area: info1;
+    align-self: center;
+    font-size: 28px;
+    width: 100%;
+    justify-self: end;
+}
+.cs2-info {
+    grid-area: info2;
+    align-self: center;
+    font-size: 28px;
+    width: 100%;
+}
+.cs3-info {
+    grid-area: info3;
+    align-self: center;
+    font-size: 28px;
+    width: 100%;
+}
+
+.cs1{
+    grid-area: main1;
+    align-self: center;
+    
+}
+.cs2 {
+    grid-area: main2;
+    justify-self: end;
+    align-self: center;
+
+}
+.cs2 img{
+    justify-self: end;
+}
+.cs3 {
+    grid-area: main3;
+    justify-self: start;
+    align-self: center;
+}
+
+.case-studies {
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-areas: 
+   "main1 main1 main1 info1"
+   "info2 main2 main2 main2"
+   "main3 main3 main3 info3"
+   ;
+   
+    height:2000px;    
+}
+.see-more{
+    color: blue;
+    text-decoration: underline blue;
+}
+
+
+
+.skills {
+    outline: red 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 300px;
+    font-size: 28px;
+    height: 855px;
+    color: black;
+    
+}
+.RWD {
+    background-color: gray;
+    height: 150px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+    
+    
+    
+}
+
+.RWD-Text {
+    margin: 0px;
+
+}
+
+.IA {
+    width: 30%;
+    background-color: gray;
+    height: 150px;
+    
+}
+.IA-Text {
+    margin: -13px auto;
+    width: 80%;
+    margin-top: 20px;
+}
+
+
+.LDR{
+    width: 30%;
+    background-color: gray;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.LDR-Text {
+    margin:25px
+}
+.title-box {
+    text-align: center;
+    
+    padding-top: 25px;
+    padding-bottom: 29px;
+    margin: 0px;
+    width: 100%;
+}
+.title-box-LDR{
+    padding-top: 48px;
+    margin: 0px;
+    padding-bottom: 54px;
+}
+.extra-box {
+    display: none;
+}
+.RWD-Text {
+    margin: -13px auto;
+    width: 80%;
+    margin-top: 20px;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+   .content {
+       flex-direction: column;
+   }
+   .case-studies{
+       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+       grid-template-columns: 1fr;
+       grid-template-areas: 
+       "main1"
+       "info1"
+       "main2"
+       "info2"
+       "main3"
+       "info3";
+       padding-top: 80px;
+   }
+   .my-face {
+       width: 100%;
+       margin-top: -60px;
+   }
+   .content-info {
+       width: 100%;
+       height: 100px;
+       font-size: 18px;
+       margin-top: -50px;
+   }
+   .skills {
+       flex-direction: column;
+       width: 100%;
+       height: 100%;
+       align-items: center;
+       margin-top: 180px;
+   }
+   .RWD{
+       width: 80%;
+       height: 300px;
+       margin-bottom: 20px;
+   }
+   .IA {
+    width: 80%;
+    height: 350px;
+    margin-bottom: 20px;
+   }
+  .LDR {
+      width: 80%;
+      height: 250px;
+  }
+}
